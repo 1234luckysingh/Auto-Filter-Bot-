@@ -83,7 +83,7 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/hd_movies_and_webseries_channel
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/hd_movies_and_webseries_channel/16")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds 
+DELETE_TIME = int(environ.get('DELETE_TIME', 120)) # Add time in seconds 
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 10)) #don't change anything in Language 
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'english hindi telugu tamil kannada malayalam').split()]
@@ -99,21 +99,21 @@ STICKERS_IDS = (
 ).split()
 
 # boolean settings 
-GROUP_FSUB = is_enabled('GROUP_FSUB', False) 
+GROUP_FSUB = is_enabled('GROUP_FSUB', True) 
 PM_SEARCH = is_enabled('PM_SEARCH', False) #switch True or False for searching results in bot pm😃
 IS_VERIFY = is_enabled('IS_VERIFY', False)
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
-WELCOME = is_enabled('WELCOME', False)
+WELCOME = is_enabled('WELCOME', True)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
-LINK_MODE = is_enabled("LINK_MODE", False)
+LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', False)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
-SHORTLINK = is_enabled('SHORTLINK', False)
+SHORTLINK = is_enabled('SHORTLINK', True)
 
 
-PAYMENT_QR = environ.get('PAYMENT_QR', 'https://graph.org/file/3e35eab6b0a05a5c2f241.jpg') #telegraph link of your QR code 
+PAYMENT_QR = environ.get('PAYMENT_QR', 'https://telegra.ph/file/6fb4af2635642f45a3cba.jpg') #telegraph link of your QR code 
 UPI_ID = environ.get('UPI_ID', 'lucky8521singh@ybl') # Add your upi id here
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True) #true if you want stream feature active in your bot
