@@ -10,7 +10,7 @@ class script(object):
 
     MY_OWNER_TXT = """★ Name: Lucky
 ★ Username: @unique_hacker_2006
-★ Update Channel : @https://t.me/hd_movies_and_webseries_channel"""
+★ Update Channel : @hd_movies_and_webseries_channel"""
 
     STATUS_TXT = """🗂 Total Files: <code>{}</code>
 👤 Total Users: <code>{}</code>
