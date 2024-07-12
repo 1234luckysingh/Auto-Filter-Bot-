@@ -51,7 +51,7 @@ if len(INDEX_CHANNELS) == 0:
 AUTH_CHANNEL = [int(auth_channels) for auth_channels in environ.get('AUTH_CHANNEL', '').split()]
 if len(AUTH_CHANNEL) == 0:
     print('Info - AUTH_CHANNEL is empty')
-LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1002153808288') #bot log channel -1005293546253
+LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1002204720453') #bot log channel -1005293546253
 if len(LOG_CHANNEL) == 0:
     print('Error - LOG_CHANNEL is missing, exiting now')
     exit()
@@ -68,7 +68,7 @@ else:
     SUPPORT_GROUP = int(SUPPORT_GROUP)
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://lucky7282singh:kumar6467@cluster0.mcw5djx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") #mongo db url
+DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://arpitgavla69:kumar6467@cluster0.f1xwgzx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") #mongo db url
 if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
@@ -117,13 +117,13 @@ PAYMENT_QR = environ.get('PAYMENT_QR', 'https://telegra.ph/file/6fb4af2635642f45
 UPI_ID = environ.get('UPI_ID', 'lucky8521singh@ybl') # Add your upi id here
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True) #true if you want stream feature active in your bot
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002193904742") #if is_stream = true then add a channel id ex: -10026393639
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002152874725") #if is_stream = true then add a channel id ex: -10026393639
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "https://t.me/+IgG8gunVH_4xNGM1") #if heroku then paste the app link here ex: https://heroku......./
+URL = environ.get("URL", "https://t.me/+80_X7wG6fUgzMjI1") #if heroku then paste the app link here ex: https://heroku......./
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
